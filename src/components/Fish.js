@@ -21,7 +21,7 @@ export default class Fish extends Sprite {
         this._animSpeedContract = 1000;
 
         const timeOut = 5000 - this._animSpeedContract;
-        this.buttonMode("click", () => {
+        this.on("click", () => {
             this.expand();
             setTimeout(() => this.contract(), timeOut);
         });
