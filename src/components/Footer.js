@@ -1,5 +1,4 @@
-import { Container, Graphics, Sprite } from "pixi.js";
-
+import { Container, Graphics, Sprite } from 'pixi.js-legacy';
 import gsap from "gsap";
 
 export default class Footer extends Container {
@@ -20,7 +19,7 @@ export default class Footer extends Container {
    */
   _addBg() {
     const bg = new Graphics();
-    bg.beginFill(0x0c4bfa);
+    bg.beginFill(0x000000);
     bg.drawRect(0, 0, window.innerWidth, 70);
     bg.endFill();
     this.addChild(bg);
@@ -31,7 +30,7 @@ export default class Footer extends Container {
    */
   _addHighlight() {
     const highlight = new Graphics();
-    highlight.beginFill(0x1d55f0);
+    highlight.beginFill(0xffd800);
     highlight.drawRect(0, 0, window.innerWidth, 70);
     highlight.scale.x = 1;
     highlight.endFill();
